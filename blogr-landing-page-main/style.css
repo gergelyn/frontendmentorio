@@ -10,8 +10,8 @@ header {
   justify-content: center;
   align-items: center;
   background: linear-gradient(to right, #ff8f70, #ff3d54);
-  background-image: url("/images/bg-pattern-intro.svg");
-  background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
+  background-image: url("./images/bg-pattern-intro.svg");
+  background-image: url("./images/bg-pattern-intro.svg"), linear-gradient(to right, #ff8f70, #ff3d54);
   background-position: 25% 52.5%;
   border-bottom-left-radius: 100px;
 }
@@ -105,14 +105,14 @@ header .navbar nav .left .dropdown span {
   }
 }
 header .navbar nav .left .dropdown span:after {
-  content: url("/images/icon-arrow-light.svg");
+  content: url("./images/icon-arrow-light.svg");
   width: 8px;
   height: 4px;
   margin-left: 10px;
 }
 @media (max-width: 375px) {
   header .navbar nav .left .dropdown span:after {
-    content: url("/images/icon-arrow-dark.svg");
+    content: url("./images/icon-arrow-dark.svg");
   }
 }
 header .navbar nav .left .dropdown .dropdown-content {
@@ -317,7 +317,7 @@ main .designed-for-the-future {
 }
 @media (max-width: 375px) {
   main .designed-for-the-future {
-    padding-bottom: calc(66px + 172.5px);
+    padding-bottom: 238.5px;
   }
 }
 main .designed-for-the-future h2 {
@@ -384,7 +384,7 @@ main .designed-for-the-future .container .content p {
   }
 }
 main .designed-for-the-future .container .illustration {
-  background-image: url("/images/illustration-editor-mobile.svg");
+  background-image: url("./images/illustration-editor-mobile.svg");
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
@@ -421,7 +421,7 @@ main .state-of-the-art-infrastructure {
   }
 }
 main .state-of-the-art-infrastructure .illustration {
-  background: url("/images/illustration-phones.svg");
+  background: url("./images/illustration-phones.svg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 40%;
@@ -446,7 +446,7 @@ main .state-of-the-art-infrastructure .content {
   main .state-of-the-art-infrastructure .content {
     padding-right: 0px;
     padding-bottom: 120px;
-    padding-top: calc(48px + 172.5px);
+    padding-top: 220.5px;
     align-items: center;
     padding-right: auto;
     width: auto;
@@ -493,7 +493,7 @@ main .free-open-simple-powerful-tooling {
   }
 }
 main .free-open-simple-powerful-tooling .illustration {
-  background-image: url("/images/illustration-laptop-mobile.svg");
+  background-image: url("./images/illustration-laptop-mobile.svg");
   background-repeat: no-repeat;
   background-position: 75%;
   background-size: cover;

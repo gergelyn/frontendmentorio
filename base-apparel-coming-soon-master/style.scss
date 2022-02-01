@@ -32,7 +32,7 @@ body {
         width: 830px;
         height: 800px;
         padding-left: 165px;
-        background: url('/images/bg-pattern-desktop.svg') no-repeat center;
+        background: url('./images/bg-pattern-desktop.svg') no-repeat center;
         h1 {
             text-transform: uppercase;
             font-size: 64px;
@@ -90,7 +90,7 @@ body {
                     &.error {
                         outline: $soft-red;
                         border-color: $soft-red;
-                        background: url('/images/icon-error.svg') no-repeat;
+                        background: url('./images/icon-error.svg') no-repeat;
                         background-position-x: 70%;
                         background-position-y: 50%;
                     }
@@ -144,11 +144,11 @@ body {
     .banner-holder {
         width: 610px;
         height: 800px;
-        background: url('/images/hero-desktop.jpg') no-repeat center;
+        background: url('./images/hero-desktop.jpg') no-repeat center;
         @media(max-width: $mobile) {
             width: 375px;
             height: 250px;
-            background: url('/images/hero-mobile.jpg') no-repeat center;
+            background: url('./images/hero-mobile.jpg') no-repeat center;
         }
     }
     @media(max-width: $mobile) {

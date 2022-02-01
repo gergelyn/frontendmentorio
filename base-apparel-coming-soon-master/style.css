@@ -24,7 +24,7 @@ body {
   width: 830px;
   height: 800px;
   padding-left: 165px;
-  background: url("/images/bg-pattern-desktop.svg") no-repeat center;
+  background: url("./images/bg-pattern-desktop.svg") no-repeat center;
 }
 .container .content-holder h1 {
   text-transform: uppercase;
@@ -90,7 +90,7 @@ body {
 .container .content-holder form .email-holder input[type=email].error {
   outline: #f96262;
   border-color: #f96262;
-  background: url("/images/icon-error.svg") no-repeat;
+  background: url("./images/icon-error.svg") no-repeat;
   background-position-x: 70%;
   background-position-y: 50%;
 }
@@ -150,13 +150,13 @@ body {
 .container .banner-holder {
   width: 610px;
   height: 800px;
-  background: url("/images/hero-desktop.jpg") no-repeat center;
+  background: url("./images/hero-desktop.jpg") no-repeat center;
 }
 @media (max-width: 375px) {
   .container .banner-holder {
     width: 375px;
     height: 250px;
-    background: url("/images/hero-mobile.jpg") no-repeat center;
+    background: url("./images/hero-mobile.jpg") no-repeat center;
   }
 }
 @media (max-width: 375px) {

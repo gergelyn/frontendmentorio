@@ -32,8 +32,8 @@ header {
     justify-content: center;
     align-items: center;
     background: linear-gradient(to right, $very-light-red-bg, $light-red-bg);
-    background-image: url('/images/bg-pattern-intro.svg');
-    background-image: url('/images/bg-pattern-intro.svg'), linear-gradient(to right, $very-light-red-bg, $light-red-bg);
+    background-image: url('./images/bg-pattern-intro.svg');
+    background-image: url('./images/bg-pattern-intro.svg'), linear-gradient(to right, $very-light-red-bg, $light-red-bg);
     background-position: 25% 52.5%;
     border-bottom-left-radius: 100px;
     @media(max-width: $mobile) {
@@ -111,12 +111,12 @@ header {
                             color: $very-dark-black-blue;
                         }
                         &:after {
-                            content: url('/images/icon-arrow-light.svg');
+                            content: url('./images/icon-arrow-light.svg');
                             width: 8px;
                             height: 4px;
                             margin-left: 10px;
                             @media(max-width: $mobile) {
-                                content: url('/images/icon-arrow-dark.svg');
+                                content: url('./images/icon-arrow-dark.svg');
                             }
                         }
                     }
@@ -368,7 +368,7 @@ main {
                 }
             }
             .illustration {
-                background-image: url('/images/illustration-editor-mobile.svg');
+                background-image: url('./images/illustration-editor-mobile.svg');
                 background-repeat: no-repeat;
                 background-position: left;
                 background-size: cover;
@@ -402,7 +402,7 @@ main {
             height: auto;
         }
         .illustration {
-            background: url('/images/illustration-phones.svg');
+            background: url('./images/illustration-phones.svg');
             background-repeat: no-repeat;
             background-size: cover;
             width: 40%;
@@ -467,7 +467,7 @@ main {
             padding-bottom: 100px;
         }
         .illustration {
-            background-image: url('/images/illustration-laptop-mobile.svg');
+            background-image: url('./images/illustration-laptop-mobile.svg');
             background-repeat: no-repeat;
             background-position: 75%;
             background-size: cover;
