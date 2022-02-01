@@ -5,7 +5,7 @@
 }
 
 header {
-  background: url("/images/desktop/image-header.jpg") no-repeat bottom;
+  background: url("./images/desktop/image-header.jpg") no-repeat bottom;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@ header {
 }
 @media (max-width: 375px) {
   header {
-    background: url("/images/mobile/image-header.jpg") no-repeat center;
+    background: url("./images/mobile/image-header.jpg") no-repeat center;
     background-size: cover;
   }
 }
@@ -239,12 +239,12 @@ main .stand-out a:hover::after {
 }
 main .egg {
   grid-area: egg;
-  background: url("/images/desktop/image-transform.jpg") no-repeat center;
+  background: url("./images/desktop/image-transform.jpg") no-repeat center;
   background-size: cover;
 }
 main .glass {
   grid-area: glass;
-  background: url("/images/desktop/image-stand-out.jpg") no-repeat center;
+  background: url("./images/desktop/image-stand-out.jpg") no-repeat center;
   background-size: cover;
 }
 main .stand-out {
@@ -292,14 +292,14 @@ main .photography p {
 }
 main .graphic {
   grid-area: graphic;
-  background: url("/images/desktop/image-graphic-design.jpg") center;
+  background: url("./images/desktop/image-graphic-design.jpg") center;
 }
 main .graphic h4, main .graphic p {
   color: #25564b;
 }
 main .photography {
   grid-area: photography;
-  background: url("/images/desktop/image-photography.jpg") center;
+  background: url("./images/desktop/image-photography.jpg") center;
 }
 main .photography h4, main .photography p {
   color: #19536b;
@@ -391,19 +391,19 @@ main .testimonials .testimonials-holder .testimonial .position {
   margin-top: 12px;
 }
 main .milk {
-  background: url("/images/desktop/image-gallery-milkbottles.jpg") no-repeat center;
+  background: url("./images/desktop/image-gallery-milkbottles.jpg") no-repeat center;
   background-size: cover;
 }
 main .orange {
-  background: url("/images/desktop/image-gallery-orange.jpg") no-repeat center;
+  background: url("./images/desktop/image-gallery-orange.jpg") no-repeat center;
   background-size: cover;
 }
 main .ice-cream {
-  background: url("/images/desktop/image-gallery-cone.jpg") no-repeat center;
+  background: url("./images/desktop/image-gallery-cone.jpg") no-repeat center;
   background-size: cover;
 }
 main .marshmallow {
-  background: url("/images/desktop/image-gallery-sugarcubes.jpg") no-repeat center;
+  background: url("./images/desktop/image-gallery-sugarcubes.jpg") no-repeat center;
   background-size: cover;
 }
 
