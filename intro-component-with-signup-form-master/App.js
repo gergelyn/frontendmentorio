@@ -51,19 +51,19 @@ password.addEventListener('input', function(event) {
 form.addEventListener('submit', function(event) {
     if(!email.validity.valid) {
         showEmailError();
-        event.preventDefault;
+        event.preventDefault();
     }
     if(!firstName.validity.valid) {
         showFirstNameError();
-        event.preventDefault;
+        event.preventDefault();
     }
     if(!lastName.validity.valid) {
         showLastNameError();
-        event.preventDefault;
+        event.preventDefault();
     }
     if(!password.validity.valid) {
         showPasswordError();
-        event.preventDefault;
+        event.preventDefault();
     }
     
 });
@@ -72,7 +72,7 @@ function showEmailError() {
     if(email.validity.valueMissing) {
         emailError.textContent = 'Email cannot be empty';
     } else if(email.validity.typeMismatch) {
-        emailError.textContent = 'Looks like it is not an email'
+        emailError.textContent = 'Looks like it is not an email';
     }
     email.className = 'error';
     emailError.className = 'error-msg active';
@@ -82,7 +82,7 @@ function showFirstNameError() {
     if(firstName.validity.valueMissing) {
         firstNameError.textContent = 'First Name cannot be empty';
     }
-    firstName.className = 'error'
+    firstName.className = 'error';
     firstNameError.className = 'error-msg active';
 }
 
@@ -90,7 +90,7 @@ function showLastNameError() {
     if(lastName.validity.valueMissing) {
         lastNameError.textContent = 'Last Name cannot be empty';
     }
-    lastName.className = 'error'
+    lastName.className = 'error';
     lastNameError.className = 'error-msg active';
 }
 
@@ -98,6 +98,6 @@ function showPasswordError() {
     if(password.validity.valueMissing) {
         passwordError.textContent = 'Password cannot be empty';
     }
-    password.className = 'error'
+    password.className = 'error';
     passwordError.className = 'error-msg active';
 }
