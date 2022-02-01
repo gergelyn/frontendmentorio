@@ -40,7 +40,7 @@ body {
   border-radius: 12px 12px 0px 0px;
   width: 350px;
   height: 140px;
-  background-image: url("/images/bg-pattern-card.svg");
+  background-image: url("./images/bg-pattern-card.svg");
 }
 @media (max-width: 375px) {
   .container .top-background {
