@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: #e5eff5;
+  color: #e5eff5;
+}
+
+.container {
+  width: 636px;
+  height: 475px;
+  margin-top: 163px;
+  display: grid;
+  grid-template-areas: "join join" "sign why";
+  grid-template-rows: 216px 259px;
+  grid-template-columns: 318px 318px;
+}
+@media (max-width: 375px) {
+  .container {
+    width: 311px;
+    height: 723px;
+    margin-top: 72px;
+    grid-template-areas: "join" "sign" "why";
+    grid-template-rows: 267px 228px 228px;
+    grid-template-columns: 311px;
+  }
+}
+.container .join-community-holder {
+  grid-area: join;
+  background-color: white;
+  border-radius: 6px 6px 0px 0px;
+}
+.container .join-community-holder h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2ab2af;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.container .join-community-holder h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #c0df34;
+  margin-top: 25px;
+  margin-left: 40px;
+}
+.container .join-community-holder p {
+  color: #98a6bd;
+  line-height: 26px;
+  max-width: 528px;
+  margin-top: 12px;
+  margin-left: 40px;
+}
+@media (max-width: 375px) {
+  .container .join-community-holder h1 {
+    font-size: 20px;
+    margin-top: 28px;
+    margin-left: 24px;
+  }
+  .container .join-community-holder h3 {
+    font-size: 15px;
+    margin-top: 25px;
+    margin-left: 24px;
+    max-width: 263px;
+  }
+  .container .join-community-holder p {
+    font-size: 14px;
+    max-width: 263px;
+    letter-spacing: -10;
+    margin-top: 18px;
+    margin-left: 24px;
+  }
+}
+.container .sign-up-holder {
+  grid-area: sign;
+  background-color: #2bb3b1;
+  border-radius: 0px 0px 0px 6px;
+}
+.container .sign-up-holder h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.container .sign-up-holder #price {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 40px;
+  margin-top: 17px;
+}
+.container .sign-up-holder span {
+  margin-left: 11px;
+}
+.container .sign-up-holder #info {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 8px;
+  margin-left: 40px;
+}
+.container .sign-up-holder button {
+  width: 236px;
+  height: 49px;
+  background-color: #c0df34;
+  font-weight: 700;
+  color: #e5eff5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 40px;
+}
+@media (max-width: 375px) {
+  .container .sign-up-holder {
+    border-radius: 0px;
+  }
+  .container .sign-up-holder h3 {
+    margin-top: 24px;
+    margin-left: 24px;
+  }
+  .container .sign-up-holder #price {
+    margin-left: 24px;
+  }
+  .container .sign-up-holder #info {
+    margin-left: 24px;
+  }
+  .container .sign-up-holder button {
+    width: 263px;
+    margin-left: 24px;
+  }
+}
+.container .why-us-holder {
+  grid-area: why;
+  background-color: #4ABEBD;
+  border-radius: 0px 0px 6px 0px;
+}
+.container .why-us-holder h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.container .why-us-holder ul {
+  margin-top: 19px;
+  margin-left: 40px;
+}
+.container .why-us-holder ul li {
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 3px;
+}
+@media (max-width: 375px) {
+  .container .why-us-holder {
+    border-radius: 0px 0px 6px 6px;
+  }
+  .container .why-us-holder h3 {
+    margin-top: 24px;
+    margin-left: 24px;
+  }
+  .container .why-us-holder ul {
+    margin-left: 24px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

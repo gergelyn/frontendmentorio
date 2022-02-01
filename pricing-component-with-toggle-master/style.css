@@ -1,0 +1,246 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f6f6fe;
+  color: #494c5f;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .title-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 72px;
+}
+.container .title-holder h1 {
+  font-size: 32px;
+}
+.container .toggle-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: #b3b5c6;
+  margin-top: 38px;
+}
+.container .toggle-holder .switch {
+  position: relative;
+  display: inline-block;
+  width: 56px;
+  height: 32px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.container .toggle-holder .slider:hover {
+  background: #a3a8f0;
+}
+.container .toggle-holder .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to right bottom, #a3a8f0 1%, #696fdd);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.container .toggle-holder .slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.container .toggle-holder input:checked + .slider {
+  background: linear-gradient(to right bottom, #a3a8f0 1%, #696fdd);
+}
+.container .toggle-holder input:focus + .slider {
+  box-shadow: 0 0 1px linear-gradient(to right bottom, #a3a8f0 1%, #696fdd);
+}
+.container .toggle-holder input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+}
+.container .toggle-holder .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.container .toggle-holder .slider.round {
+  border-radius: 34px;
+}
+.container .toggle-holder .slider.round:before {
+  border-radius: 50%;
+}
+.container .pricing-cards-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 64px;
+  margin-bottom: 103px;
+}
+@media (max-width: 375px) {
+  .container .pricing-cards-holder {
+    flex-direction: column;
+  }
+}
+.container .pricing-cards-holder .pricing-card {
+  background-color: white;
+  width: 350px;
+}
+.container .pricing-cards-holder .pricing-card:nth-child(1) {
+  border-radius: 8px 0px 0px 8px;
+  height: 453px;
+}
+.container .pricing-cards-holder .pricing-card:nth-child(1) h3 {
+  margin-top: 34px;
+}
+.container .pricing-cards-holder .pricing-card:nth-child(2) {
+  border-radius: 8px;
+  height: 501px;
+  background: linear-gradient(to right bottom, #a3a8f0 1%, #696fdd);
+  color: white;
+}
+.container .pricing-cards-holder .pricing-card:nth-child(2) h3 {
+  margin-top: 58px;
+}
+.container .pricing-cards-holder .pricing-card:nth-child(2) .infos-holder {
+  color: #f6f6fe;
+}
+.container .pricing-cards-holder .pricing-card:nth-child(2) .learn-more-holder button {
+  background: #f6f6fe;
+}
+.container .pricing-cards-holder .pricing-card:nth-child(2) .learn-more-holder button a {
+  color: #696fdd;
+}
+.container .pricing-cards-holder .pricing-card:nth-child(2) .learn-more-holder button:hover {
+  background: #696fdd;
+  border: 1px solid white;
+}
+.container .pricing-cards-holder .pricing-card:nth-child(2) .learn-more-holder button:hover a {
+  color: white;
+}
+@media (max-width: 375px) {
+  .container .pricing-cards-holder .pricing-card:nth-child(2) {
+    height: 453px;
+    margin-top: 34px;
+    margin-bottom: 34px;
+  }
+  .container .pricing-cards-holder .pricing-card:nth-child(2) h3 {
+    margin-top: 34px;
+  }
+}
+.container .pricing-cards-holder .pricing-card:nth-child(3) {
+  border-radius: 0px 8px 8px 0px;
+  height: 453px;
+}
+.container .pricing-cards-holder .pricing-card:nth-child(3) h3 {
+  margin-top: 34px;
+}
+.container .pricing-cards-holder .pricing-card h3 {
+  font-size: 18px;
+  align-self: center;
+}
+.container .pricing-cards-holder .pricing-card .price-tag {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .pricing-cards-holder .pricing-card .price-tag span {
+  font-size: 40px;
+  display: inline-block;
+}
+.container .pricing-cards-holder .pricing-card .price-tag p {
+  font-size: 72px;
+  display: inline-block;
+}
+.container .pricing-cards-holder .pricing-card .infos-holder {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #6d708d;
+}
+.container .pricing-cards-holder .pricing-card .infos-holder .infos {
+  margin-top: 24px;
+  list-style: none;
+}
+.container .pricing-cards-holder .pricing-card .infos-holder .infos .info {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 288px;
+}
+.container .pricing-cards-holder .pricing-card .infos-holder .infos .info:nth-child(odd) {
+  border-top: 1px solid #b3b5c6;
+  border-bottom: 1px solid #b3b5c6;
+}
+.container .pricing-cards-holder .pricing-card .learn-more-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+}
+.container .pricing-cards-holder .pricing-card .learn-more-holder button {
+  width: 288px;
+  height: 44px;
+  border: 0;
+  border-radius: 4px;
+  background: linear-gradient(to right bottom, #a3a8f0 1%, #696fdd);
+  cursor: pointer;
+}
+.container .pricing-cards-holder .pricing-card .learn-more-holder button a {
+  color: #f6f6fe;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.container .pricing-cards-holder .pricing-card .learn-more-holder button:hover {
+  background: white;
+  border: 1px solid #696fdd;
+}
+.container .pricing-cards-holder .pricing-card .learn-more-holder button:hover a {
+  color: #696fdd;
+}
+.container .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.container .attribution a {
+  color: #3e52a3;
+}
+
+#top-svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+#bottom-svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/*# sourceMappingURL=style.css.map */

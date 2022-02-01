@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf2f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  width: 730px;
+  height: 280px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 260px;
+}
+.container .furniture-holder {
+  width: 285px;
+  height: 280px;
+  background-image: url("/images/drawers.jpg");
+  background-size: cover;
+  border-radius: 8px 0px 0px 8px;
+}
+@media (max-width: 375px) {
+  .container .furniture-holder {
+    width: 327px;
+    height: 200px;
+    border-radius: 8px 8px 0px 0px;
+  }
+}
+.container .content-holder {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  width: 365px;
+  margin-top: 32px;
+}
+.container .content-holder h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #48556a;
+  line-height: 29px;
+}
+@media (max-width: 375px) {
+  .container .content-holder h1 {
+    font-size: 16px;
+    max-width: 254px;
+    line-height: 24px;
+  }
+}
+.container .content-holder p {
+  line-height: 20px;
+  margin-top: 12px;
+  color: #6d7f97;
+  font-weight: 400;
+}
+@media (max-width: 375px) {
+  .container .content-holder p {
+    max-width: 256px;
+    margin-top: 14px;
+  }
+}
+.container .content-holder .infos-holder {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container .content-holder .infos-holder img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.container .content-holder .infos-holder .user-infos {
+  margin-left: 16px;
+}
+.container .content-holder .infos-holder .user-infos #name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #48556a;
+}
+.container .content-holder .infos-holder .user-infos #date {
+  color: #9eafc2;
+}
+.container .content-holder .infos-holder button {
+  width: 32px;
+  height: 32px;
+  margin-left: 163px;
+  background-color: #ecf2f8;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  position: relative;
+}
+.container .content-holder .infos-holder button .tooltip {
+  display: none;
+  position: absolute;
+  width: 248px;
+  height: 55px;
+  z-index: 2;
+  text-align: center;
+  background-color: #48556a;
+  bottom: 187.5%;
+  left: 50%;
+  border-radius: 8px;
+  margin-left: -124px;
+  cursor: auto;
+}
+.container .content-holder .infos-holder button .tooltip span #share {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  color: #9eafc2;
+  font-weight: 700;
+  text-decoration: none;
+}
+.container .content-holder .infos-holder button .tooltip span i {
+  color: white;
+  font-size: 20px;
+}
+.container .content-holder .infos-holder button .tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -9px;
+  border-width: 9px;
+  border-style: solid;
+  border-color: #48556a transparent transparent transparent;
+}
+.container .content-holder .infos-holder button:hover .tooltip {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.container .content-holder .infos-holder button:hover {
+  background-color: #6d7f97;
+}
+.container .content-holder .infos-holder button:hover svg path {
+  fill: white;
+}
+@media (max-width: 375px) {
+  .container .content-holder .infos-holder button {
+    margin-left: 61px;
+  }
+}
+@media (max-width: 375px) {
+  .container .content-holder .infos-holder {
+    margin-top: 34px;
+  }
+}
+@media (max-width: 375px) {
+  .container .content-holder {
+    width: 263px;
+    margin-top: 37px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    width: 327px;
+    height: 512px;
+    flex-direction: column;
+    margin-top: 74px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */

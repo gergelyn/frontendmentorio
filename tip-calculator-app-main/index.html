@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="title-holder">
+      <h1>SPLI <br/>TTER</h1>
+    </div><!-- /title-holder -->
+    <div class="calculator-holder">
+      <div class="input-holder">
+        <div class="bill-holder">
+          <h3>Bill</h3>
+          <input type="number" name="bill-amount" id="bill-amount-input" placeholder="0">
+        </div><!-- /bill-holder -->
+
+        <div class="select-tip-holder">
+          <h3>Select Tip %</h3>
+          <div class="tip-amount-holder">
+            <input type="button" id="five-tip" value="5%">
+            <input type="button" id="ten-tip" value="10%">
+            <input type="button" id="fifteen-tip" value="15%">
+            <input type="button" id="twentyfive-tip" value="25%">
+            <input type="button" id="fifty-tip" value="50%">
+            <input type="number" name="custom-tip" id="custom-tip" placeholder="Custom">
+          </div>
+          
+          
+        </div><!-- /select-tip-holder -->
+        
+        <div class="number-of-people-holder">
+          <h3>Number of People</h3>
+          <input type="number" name="number-of-people" id="number-of-people-input" placeholder="0">
+        </div><!-- /number-of-people-holder -->
+
+      </div><!-- /input-holder -->
+      <div class="calculated-holder">
+        <div class="calculcated-tip-amount-holder">
+          <div class="calculated-tip-title">
+            <h3>Tip Amount</h3>
+            <p>/ person</p>
+          </div><!-- /calculated-tip-title -->
+          <div class="calculated-tip">
+            <span>&dollar;</span><p id="tip">0.00</p>
+          </div><!-- /calculated-tip -->
+        </div><!-- /calculated-tip-amount-holder -->
+        
+        <div class="calculated-total-holder">
+          <div class="calculated-total-title">
+            <h3>Total</h3>
+            <p>/ person</p>
+          </div><!-- /calculated-total-title -->
+          <div class="calculated-total">
+            <span>&dollar;</span><p id="total">0.00</p>
+          </div><!-- /calculated-total -->
+        </div><!-- /calculated-total-holder -->
+        <div class="calculator-reset">
+          <button id="reset" disabled>Reset</button>
+        </div>
+      </div><!-- /calculated-holder -->
+    </div><!-- /calculator-holder -->
+    <div class="attribution">
+      
+      Coded by <a href="https://www.gergelyn.com">Gergely Nagy</a>.
+    </div><!-- /attribution -->
+  </div><!-- /container -->
+  
+  
+  
+  <script src="/App.js"></script>
+</body>
+</html>

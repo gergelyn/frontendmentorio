@@ -1,0 +1,261 @@
+$primary-color: #26c0ab;
+$very-dark-cyan: #00494d;
+$dark-grayish-cyan: #5e7a7d;
+$dark-grayish-cyan2: #7f9c9f;
+$light-grayish-cyan: #c5e4e7;
+$light-grayish-cyan2: #f4fafa;
+$white: #ffffff;
+
+$font-family: 'Space Mono', monospace;
+
+
+$desktop: 1440px;
+$mobile: 375px;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background: $light-grayish-cyan;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .title-holder {
+        margin-top: 153px;
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: $very-dark-cyan;
+            letter-spacing: 16px;
+        }
+    }
+    .calculator-holder {
+        display: flex;
+        flex-direction: row;
+        width: 920px;
+        height: 481px;
+        background: $white;
+        border-radius: 24px;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 79px;
+        .input-holder {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 417px;
+            width: 413px;
+            .bill-holder {
+                h3 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $dark-grayish-cyan2;
+                }
+                input {
+                    width: 379px;
+                    height: 48px;
+                    font-size: 24px;
+                    font-family: $font-family;
+                    font-weight: 400;
+                    color: $dark-grayish-cyan2;
+                    background: $light-grayish-cyan2;
+                    border: 0;
+                    border-radius: 4px;
+                    text-align: right;
+                    margin-top: 6px;
+                    padding-right: 16px;
+                }
+            }
+            .select-tip-holder {
+                h3 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $dark-grayish-cyan2;
+                }
+                .tip-amount-holder {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-template-rows: 48px 48px;
+                    column-gap: 16px;
+                    row-gap: 16px;
+                    margin-top: 6px;
+                    input[type=button] {
+                        border: none;
+                        border-radius: 4px;
+                        width: 117px;
+                        height: 48px;
+                        background: $very-dark-cyan;
+                        color: $light-grayish-cyan2;
+                        font-size: 24px;
+                        font-weight: 700;
+                        font-family: $font-family;
+                        cursor: pointer;
+                    }
+                    #custom-tip {
+                        border: none;
+                        border-radius: 4px;
+                        width: 117px;
+                        height: 48px;
+                        font-size: 24px;
+                        font-weight: 700;
+                        font-family: $font-family;
+                        background: $light-grayish-cyan2;
+                        color: $dark-grayish-cyan2;
+                        text-align: center;
+                    }
+                }
+                
+                
+            }
+            .number-of-people-holder {
+                h3 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $dark-grayish-cyan2;
+                }
+                input {
+                    width: 379px;
+                    height: 48px;
+                    font-size: 24px;
+                    font-family: $font-family;
+                    font-weight: 400;
+                    color: $dark-grayish-cyan2;
+                    background: $light-grayish-cyan2;
+                    border: 0;
+                    border-radius: 4px;
+                    text-align: right;
+                    margin-top: 6px;
+                    padding-right: 16px;
+                }
+            }
+        }
+        .calculated-holder {
+            background: $very-dark-cyan;
+            border-radius: 16px;
+            width: 413px;
+            height: 417px;
+            .calculcated-tip-amount-holder {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 40px;
+                margin-left: 40px;
+                margin-right: 40px;
+                .calculated-tip-title {
+                    h3 {
+                        font-size: 16px;
+                        color: $light-grayish-cyan2;
+                        font-weight: 700;
+                    }
+                    p {
+                        font-size: 13px;
+                        font-weight: 700;
+                        color: $dark-grayish-cyan2;
+                    }
+                }
+                .calculated-tip {
+                    span {
+                        color: $primary-color;
+                        font-size: 46px;
+                        font-weight: 700;
+                    }
+                    p {
+                        color: $primary-color;
+                        display: inline-block;
+                        font-size: 46px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .calculated-total-holder {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 28px;
+                margin-left: 40px;
+                margin-right: 40px;
+                .calculated-total-title {
+                    h3 {
+                        font-size: 16px;
+                        color: $light-grayish-cyan2;
+                        font-weight: 700;
+                    }
+                    p {
+                        font-size: 13px;
+                        font-weight: 700;
+                        color: $dark-grayish-cyan2;
+                    }
+                }
+                .calculated-total {
+                    span {
+                        color: $primary-color;
+                        font-size: 46px;
+                        font-weight: 700;
+                    }
+                    p {
+                        display: inline-block;
+                        color: $primary-color;
+                        font-size: 46px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .calculator-reset {
+                text-align: center;
+                margin-top: 123px;
+                button {
+                    font-family: $font-family;
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    width: 333px;
+                    height: 48px;
+                    border: none;
+                    border-radius: 4px;
+                    background: opacity($primary-color);
+                    color: $very-dark-cyan;
+                }
+            }
+        }
+    }
+}
+
+.active,
+button:enabled {
+    background: $primary-color !important;
+    color: $very-dark-cyan !important;
+}
+
+button:enabled {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: none;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+

@@ -1,0 +1,158 @@
+$font-family: 'Josefin Sans', sans-serif;
+$mobile: 375px;
+
+$desaturated-red: #ce9797;
+$soft-red: #f96262;
+$dark-grayish-red: #413a3a;
+$linear-gradient1: linear-gradient(135deg,#ffffff,#fff5f5);
+$linear-gradient2: linear-gradient(135deg,#f8bfbf,#ee8c8c);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $linear-gradient1;
+    font-family: $font-family;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    .content-holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 830px;
+        height: 800px;
+        padding-left: 165px;
+        background: url('/images/bg-pattern-desktop.svg') no-repeat center;
+        h1 {
+            text-transform: uppercase;
+            font-size: 64px;
+            line-height: 68px;
+            letter-spacing: 32px;
+            max-width: 446px;
+            font-weight: 300;
+            color: $desaturated-red;
+            span {
+                color: $dark-grayish-red;
+                font-weight: 700;
+            }
+            @media(max-width: $mobile) {
+                font-size: 40px;
+                line-height: 42px;
+                max-width: 287px;
+                text-align: center;
+                letter-spacing: 0;
+            }
+        }
+        p {
+            margin-top: 28px;
+            font-size: 16px;
+            max-width: 446px;
+            line-height: 29px;
+            color: $desaturated-red;
+            @media(max-width: $mobile) {
+                font-size: 14px;
+                margin-top: 20px;
+                max-width: 311px;
+                line-height: 22px;
+                text-align: center;
+            }
+        }
+        form {
+            margin-top: 45px;
+            display: flex;
+            flex-direction: column;
+            .email-holder {
+                position: relative;
+                width: 446px;
+                input[type=email] {
+                    width: 100%;
+                    height: 56px;
+                    border-radius: 28px;
+                    padding-left: 32px;
+                    border: 1px solid $desaturated-red;
+                    background-color: white;
+                    font-family: $font-family;
+                    font-size: 16px;
+                    outline: none;
+                    &::placeholder {
+                        color: $desaturated-red;
+                    }
+                    &.error {
+                        outline: $soft-red;
+                        border-color: $soft-red;
+                        background: url('/images/icon-error.svg') no-repeat;
+                        background-position-x: 70%;
+                        background-position-y: 50%;
+                    }
+                    @media(max-width: $mobile) {
+                        height: 48px;
+                        font-size: 14px;
+                        padding-left: 24px;
+                    }
+                }
+                button {
+                    position: absolute;
+                    z-index: 2;
+                    right: 0;
+                    width: 100px;
+                    height: 56px;
+                    border: none;
+                    border-radius: 28px;
+                    cursor: pointer;
+                    background: $linear-gradient2;
+                    @media(max-width: $mobile) {
+                        width: 64px;
+                        height: 48px;
+                    }
+                }
+                @media(max-width: $mobile) {
+                    width: 311px;
+                }
+            }
+            .error-msg {
+                color: $soft-red;
+                margin-top: 12px;
+                margin-left: 32px;
+                font-size: 13px;
+                display: none;
+            }
+            @media(max-width: $mobile) {
+                margin-top: 36px;
+            }
+            .error-msg.active {
+                display: block;
+            }
+        }
+        @media(max-width: $mobile) {
+            width: 375px;
+            height: 466px;
+            padding-left: 0;
+            align-items: center;
+            background: none;
+        }
+    }
+    .banner-holder {
+        width: 610px;
+        height: 800px;
+        background: url('/images/hero-desktop.jpg') no-repeat center;
+        @media(max-width: $mobile) {
+            width: 375px;
+            height: 250px;
+            background: url('/images/hero-mobile.jpg') no-repeat center;
+        }
+    }
+    @media(max-width: $mobile) {
+        flex-direction: column-reverse;
+        
+    }
+}

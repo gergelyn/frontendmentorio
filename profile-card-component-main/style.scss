@@ -1,0 +1,115 @@
+$font-family: 'Kumbh Sans', sans-serif;
+$mobile: 375px;
+$dark-cyan: #19a2ae;
+$very-dark-desaturated-blue: #2d3248;
+$dark-grayish-blue: #6a6f81;
+$dark-gray: #969696;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $dark-cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-family;
+    font-size: 18px;
+    color: $dark-grayish-blue;
+    position: relative;
+}
+
+#top-svg {
+    position: absolute;
+    top: -50%;
+    left: -75%
+}
+
+#bottom-svg {
+    position: absolute;
+    bottom: -75%;
+    right: -75%;
+}
+
+.container {
+    background-color: white;
+    border-radius: 12px;
+    width: 350px;
+    height: 375px;
+    margin-top: 173px;
+    position: relative;
+    .top-background {
+        border-radius: 12px 12px 0px 0px;
+        width: 350px;
+        height: 140px;
+        background-image: url('/images/bg-pattern-card.svg');
+        @media(max-width: $mobile) {
+            width: 326px;
+        }
+    }
+    .outer-image {
+        position: absolute;
+        top: 87px;
+        left: 122px;
+        width: 106px;
+        height: 106px;
+        border-radius: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            border-radius: 100%;
+        }
+        @media(max-width: $mobile) {
+            left: 110px;
+        }
+    }
+    .user-infos {
+        text-align: center;
+        margin-top: 76px;
+        #name {
+            display: inline-block;
+            font-weight: 700;
+            color: $very-dark-desaturated-blue
+        }
+        #city {
+            display: block;
+            font-size: 14px;
+            margin-top: 12px;
+        }
+    }
+    hr {
+        margin-top: 24px;
+        margin-bottom: 28px;
+        border: 1px thin $dark-gray;
+    }
+    .social-infos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        p {
+            font-weight: 700;
+            color: $very-dark-desaturated-blue
+        }
+        label {
+            font-size: 12px;
+        }
+    }
+
+    @media(max-width: $mobile) {
+        width: 326px;
+        height: 375px;
+        margin-top: 147px;
+    }
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

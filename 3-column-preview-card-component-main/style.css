@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: #f2f2f2;
+  color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 171px;
+}
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+  }
+}
+.container .sedans-holder {
+  display: flex;
+  flex-direction: column;
+  width: 307px;
+  height: 500px;
+  background-color: #e38826;
+  padding-left: 48px;
+  border-radius: 6px 0px 0px 6px;
+}
+.container .sedans-holder svg {
+  margin-top: 48px;
+}
+.container .sedans-holder h3 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+.container .sedans-holder p {
+  margin-top: 28px;
+  width: 192px;
+  line-height: 25px;
+}
+.container .sedans-holder button {
+  width: 146px;
+  height: 48px;
+  margin-top: 86px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  border-radius: 24px;
+  background-color: #f2f2f2;
+  color: #e38826;
+  cursor: pointer;
+}
+.container .sedans-holder button:hover {
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+  background-color: #e38826;
+}
+@media (max-width: 375px) {
+  .container .sedans-holder {
+    border-radius: 6px 6px 0px 0px;
+    width: 327px;
+    height: 442px;
+  }
+  .container .sedans-holder svg {
+    margin-top: 46px;
+  }
+  .container .sedans-holder h3 {
+    margin-top: 36px;
+  }
+  .container .sedans-holder button {
+    margin-top: 28px;
+    margin-bottom: 49px;
+  }
+}
+.container .suvs-holder {
+  display: flex;
+  flex-direction: column;
+  width: 307px;
+  height: 500px;
+  background-color: #006970;
+  padding-left: 48px;
+}
+.container .suvs-holder svg {
+  margin-top: 48px;
+}
+.container .suvs-holder h3 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+.container .suvs-holder p {
+  margin-top: 28px;
+  width: 206px;
+  line-height: 25px;
+}
+.container .suvs-holder button {
+  width: 146px;
+  height: 48px;
+  margin-top: 86px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  border-radius: 24px;
+  background-color: #f2f2f2;
+  color: #006970;
+  cursor: pointer;
+}
+.container .suvs-holder button:hover {
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+  background-color: #006970;
+}
+@media (max-width: 375px) {
+  .container .suvs-holder {
+    width: 327px;
+    height: 442px;
+  }
+  .container .suvs-holder svg {
+    margin-top: 46px;
+  }
+  .container .suvs-holder h3 {
+    margin-top: 36px;
+  }
+  .container .suvs-holder p {
+    width: 224px;
+  }
+  .container .suvs-holder button {
+    margin-top: 28px;
+    margin-bottom: 49px;
+  }
+}
+.container .luxury-holder {
+  display: flex;
+  flex-direction: column;
+  width: 307px;
+  height: 500px;
+  background-color: #004241;
+  padding-left: 48px;
+  border-radius: 0px 6px 6px 0px;
+}
+.container .luxury-holder svg {
+  margin-top: 48px;
+}
+.container .luxury-holder h3 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 40px;
+  margin-top: 35px;
+  text-transform: uppercase;
+}
+.container .luxury-holder p {
+  margin-top: 28px;
+  width: 208px;
+  line-height: 25px;
+}
+.container .luxury-holder button {
+  width: 146px;
+  height: 48px;
+  margin-top: 86px;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+  border: none;
+  border-radius: 24px;
+  background-color: #f2f2f2;
+  color: #004241;
+  cursor: pointer;
+}
+.container .luxury-holder button:hover {
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+  background-color: #004241;
+}
+@media (max-width: 375px) {
+  .container .luxury-holder {
+    width: 327px;
+    height: 442px;
+    border-radius: 0px 0px 6px 6px;
+  }
+  .container .luxury-holder svg {
+    margin-top: 46px;
+  }
+  .container .luxury-holder h3 {
+    margin-top: 36px;
+  }
+  .container .luxury-holder p {
+    width: 228px;
+  }
+  .container .luxury-holder button {
+    margin-top: 28px;
+    margin-bottom: 49px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,181 @@
+$font-family: 'Manrope', sans-serif;
+$mobile: 375px;
+$very-dark-grayish-blue: #48556a;
+$desaturated-dark-blue: #6d7f97;
+$grayish-blue: #9eafc2;
+$light-grayish-blue: #ecf2f8;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $light-grayish-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-family;
+    font-size: 13px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 8px;
+    width: 730px;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 260px;
+    .furniture-holder {
+        width: 285px;
+        height: 280px;
+        background-image: url('/images/drawers.jpg');
+        background-size: cover;
+        border-radius: 8px 0px 0px 8px;
+        @media(max-width: $mobile) {
+            width: 327px;
+            height: 200px;
+            border-radius: 8px 8px 0px 0px;
+        }
+    }
+    .content-holder {
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px; // or delete align-self 
+        width: 365px;
+        margin-top: 32px;
+        h1 {
+            font-size: 20px;
+            font-weight: 700;
+            color: $very-dark-grayish-blue;
+            // max-width: 337px;
+            line-height: 29px;
+            @media(max-width: $mobile) {
+                font-size: 16px;
+                max-width: 254px;
+                line-height: 24px;
+            }
+        }
+        p {
+            // max-width: 334px;
+            line-height: 20px;
+            margin-top: 12px;
+            color: $desaturated-dark-blue;
+            font-weight: 400;
+            @media(max-width: $mobile) {
+                max-width: 256px;
+                margin-top: 14px;
+            }
+        }
+        .infos-holder {
+            margin-top: 22px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            img {
+                width: 40px;
+                height: 40px;
+                border-radius: 100%;
+            }
+            .user-infos {
+                margin-left: 16px;
+                #name {
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: $very-dark-grayish-blue;
+                }
+                #date {
+                   color: $grayish-blue;
+                }
+            }
+            button {
+                width: 32px;
+                height: 32px;
+                margin-left: 163px;
+                background-color: $light-grayish-blue;
+                border: none;
+                border-radius: 100%;
+                cursor: pointer;
+                position: relative; //
+                .tooltip {
+                    display: none;
+                    position: absolute;
+                    width: 248px;
+                    height: 55px;
+                    z-index: 2;
+                    text-align: center;
+                    background-color: $very-dark-grayish-blue;
+                    // bottom: 45px;
+                    bottom: 187.5%;
+                    left: 50%;
+                    // left: -110px;
+                    border-radius: 8px;
+                    margin-left: -124px;
+                    cursor: auto;
+                    span #share {
+                        font-family: $font-family;
+                        font-size: 13px;
+                        color: $grayish-blue;
+                        font-weight: 700;
+                        text-decoration: none;
+                    }
+
+                    span i {
+                        color: white;
+                        font-size: 20px;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        margin-left: -9px;
+                        border-width: 9px;
+                        border-style: solid;
+                        border-color: $very-dark-grayish-blue transparent transparent transparent;
+                    }
+                }
+                &:hover .tooltip {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    align-items: center;
+                }
+                &:hover {
+                    background-color: $desaturated-dark-blue;
+                    svg path {
+                        fill: white;
+                    }
+                }
+                @media(max-width: $mobile) {
+                    margin-left: 61px;
+                }
+            }
+            @media(max-width: $mobile) {
+                margin-top: 34px;
+            }
+        }
+        @media(max-width: $mobile) {
+            // margin-left: 32px;
+            width: 263px;
+            margin-top: 37px;
+        }
+    }
+    @media(max-width: $mobile) {
+        width: 327px;
+        height: 512px;
+        flex-direction: column;
+        margin-top: 74px;
+    }
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

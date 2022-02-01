@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  margin-top: 87px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 375px) {
+  .container .logo-holder img {
+    max-width: 53px;
+  }
+}
+.container .title-holder {
+  text-align: center;
+  margin-top: 50px;
+}
+.container .title-holder h1 {
+  font-size: 47px;
+  color: #969696;
+  font-weight: 300;
+}
+@media (max-width: 375px) {
+  .container .title-holder h1 {
+    font-size: 22px;
+  }
+}
+.container .title-holder h1 span {
+  color: #151f29;
+  font-weight: 700;
+}
+.container .title-holder p {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #151f29;
+}
+@media (max-width: 375px) {
+  .container .title-holder p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  .container .title-holder {
+    margin-top: 40px;
+  }
+}
+.container .form-holder form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.container .form-holder form .email-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.container .form-holder form .email-holder input[type=email] {
+  padding-left: 32px;
+  border: 1px solid #c2d3ff;
+  border-radius: 28px;
+  width: 423px;
+  height: 56px;
+  font-size: 16px;
+  color: #151f29;
+}
+.container .form-holder form .email-holder input[type=email]::placeholder {
+  color: #c2d3ff;
+}
+.container .form-holder form .email-holder input[type=email].error {
+  outline: #ff5263;
+  border-color: #ff5263;
+}
+@media (max-width: 375px) {
+  .container .form-holder form .email-holder input[type=email] {
+    width: 282px;
+    height: 40px;
+    font-size: 12px;
+  }
+}
+.container .form-holder form .email-holder .error-msg {
+  color: #ff5263;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 8px;
+  margin-left: 32px;
+  display: none;
+}
+@media (max-width: 375px) {
+  .container .form-holder form .email-holder .error-msg {
+    font-size: 10px;
+    margin-top: 6px;
+    margin-left: 0px;
+  }
+}
+.container .form-holder form .email-holder .error-msg.active {
+  display: block;
+}
+@media (max-width: 375px) {
+  .container .form-holder form .email-holder {
+    align-items: center;
+  }
+}
+.container .form-holder form input[type=submit] {
+  margin-left: 16px;
+  border: none;
+  border-radius: 28px;
+  background-color: #4f7df3;
+  width: 201px;
+  height: 56px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  font-family: "Libre Franklin", sans-serif;
+  cursor: pointer;
+}
+.container .form-holder form input[type=submit]:hover {
+  background-color: #7fa0f6;
+}
+@media (max-width: 375px) {
+  .container .form-holder form input[type=submit] {
+    width: 282px;
+    height: 40px;
+    margin-left: 0px;
+    margin-top: 14px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 375px) {
+  .container .form-holder form {
+    flex-direction: column;
+    margin-top: 32px;
+  }
+}
+.container .product-image-holder {
+  margin-top: 87px;
+}
+.container .product-image-holder img {
+  max-width: 638px;
+}
+@media (max-width: 375px) {
+  .container .product-image-holder img {
+    max-width: 320px;
+  }
+}
+@media (max-width: 375px) {
+  .container .product-image-holder {
+    margin-top: 68px;
+  }
+}
+footer {
+  margin-top: 72px;
+}
+footer .social-media-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer .social-media-holder .social-media-icon {
+  background-color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  border: 1px solid #c2d3ff;
+  margin-left: 6px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+footer .social-media-holder .social-media-icon i {
+  color: #4f7df3;
+  font-size: 15px;
+}
+footer .social-media-holder .social-media-icon:hover {
+  background-color: #4f7df3;
+  border: none;
+}
+footer .social-media-holder .social-media-icon:hover i {
+  color: #c2d3ff;
+}
+footer #copyright {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  color: #969696;
+  margin-top: 28px;
+}
+@media (max-width: 375px) {
+  footer #copyright {
+    font-size: 10px;
+  }
+}
+@media (max-width: 375px) {
+  footer {
+    margin-top: 120px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
