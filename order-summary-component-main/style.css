@@ -13,7 +13,7 @@ body {
 .svg-bg {
   position: absolute;
   z-index: -1;
-  background: url("/images/pattern-background-desktop.svg");
+  background: url("./images/pattern-background-desktop.svg");
   width: 1440px;
   height: 437px;
   background-size: 1440px 437px;
@@ -21,7 +21,7 @@ body {
 }
 @media (max-width: 375px) {
   .svg-bg {
-    background: url("/images/pattern-background-mobile.svg");
+    background: url("./images/pattern-background-mobile.svg");
     width: 375px;
     height: 194px;
     background-size: 375px 194px;
@@ -59,7 +59,7 @@ body {
   border-radius: 0;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
-  background-image: url("/images/illustration-hero.svg");
+  background-image: url("./images/illustration-hero.svg");
 }
 @media (max-width: 375px) {
   .container .order-summary-holder .svg-holder {
