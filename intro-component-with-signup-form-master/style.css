@@ -10,13 +10,13 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #ff7a7a;
-  background-image: url("/images/bg-intro-desktop.png");
+  background-image: url("./images/bg-intro-desktop.png");
   background-position: top center;
   font-family: "Poppins", sans-serif;
 }
 @media (max-width: 375px) {
   body {
-    background-image: url("/images/bg-intro-mobile.png");
+    background-image: url("./images/bg-intro-mobile.png");
   }
 }
 
@@ -120,7 +120,7 @@ body {
   outline-color: #3e3c49;
 }
 .container .form-holder form input.error {
-  background: url("/images/icon-error.svg");
+  background: url("./images/icon-error.svg");
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: right;

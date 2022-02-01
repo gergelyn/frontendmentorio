@@ -18,11 +18,11 @@ body {
     justify-content: center;
     align-items: center;
     background-color: $red;
-    background-image: url('/images/bg-intro-desktop.png');
+    background-image: url('./images/bg-intro-desktop.png');
     background-position: top center;
     font-family: $font-family;
     @media(max-width: $mobile) {
-        background-image: url('/images/bg-intro-mobile.png');
+        background-image: url('./images/bg-intro-mobile.png');
     }
 }
 
@@ -122,7 +122,7 @@ body {
                     outline-color: $dark-blue;
                 }
                 &.error {
-                    background: url('/images/icon-error.svg');
+                    background: url('./images/icon-error.svg');
                     background-size: 20px;
                     background-repeat: no-repeat;
                     background-position: right;
