@@ -1,251 +1,121 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-size: 15px;
-  font-family: "Lexend Deca", sans-serif;
-  background-color: #f2f2f2;
-  color: #f2f2f2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    font-size: 15px;
+    font-family: "Lexend Deca", sans-serif;
+    background-color: #f2f2f2;
+    color: #f2f2f2;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 171px;
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 90%;
+    margin-left: auto;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
-@media (max-width: 375px) {
-  .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+
+.sedans-holder, .suvs-holder, .luxury-holder {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
 }
-.container .sedans-holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 307px;
-  height: 500px;
-  background-color: #e38826;
-  padding-left: 48px;
-  border-radius: 6px 0px 0px 6px;
-}
-.container .sedans-holder svg {
-  margin-top: 48px;
-}
-.container .sedans-holder h3 {
-  font-family: "Big Shoulders Display", cursive;
-  font-size: 40px;
-  margin-top: 35px;
-  text-transform: uppercase;
-}
-.container .sedans-holder p {
-  margin-top: 28px;
-  width: 192px;
-  line-height: 25px;
-}
-.container .sedans-holder button {
-  width: 146px;
-  height: 48px;
-  margin-top: 86px;
-  text-align: center;
-  font-family: "Lexend Deca", sans-serif;
-  border: none;
-  border-radius: 24px;
-  background-color: #f2f2f2;
-  color: #e38826;
-  cursor: pointer;
-}
-.container .sedans-holder button:hover {
-  border: 2px solid #f2f2f2;
-  color: #f2f2f2;
-  background-color: #e38826;
-}
-@media (max-width: 375px) {
-  .container .sedans-holder {
+
+.sedans-holder {
+    background-color: #e38826;
     border-radius: 6px 6px 0px 0px;
-    width: 327px;
-    height: 442px;
-  }
-  .container .sedans-holder svg {
-    margin-top: 46px;
-  }
-  .container .sedans-holder h3 {
-    margin-top: 36px;
-  }
-  .container .sedans-holder button {
-    margin-top: 28px;
-    margin-bottom: 49px;
-  }
 }
-.container .suvs-holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 307px;
-  height: 500px;
-  background-color: #006970;
-  padding-left: 48px;
+
+.suvs-holder {
+    background-color: #006970;
 }
-.container .suvs-holder svg {
-  margin-top: 48px;
-}
-.container .suvs-holder h3 {
-  font-family: "Big Shoulders Display", cursive;
-  font-size: 40px;
-  margin-top: 35px;
-  text-transform: uppercase;
-}
-.container .suvs-holder p {
-  margin-top: 28px;
-  width: 206px;
-  line-height: 25px;
-}
-.container .suvs-holder button {
-  width: 146px;
-  height: 48px;
-  margin-top: 86px;
-  text-align: center;
-  font-family: "Lexend Deca", sans-serif;
-  border: none;
-  border-radius: 24px;
-  background-color: #f2f2f2;
-  color: #006970;
-  cursor: pointer;
-}
-.container .suvs-holder button:hover {
-  border: 2px solid #f2f2f2;
-  color: #f2f2f2;
-  background-color: #006970;
-}
-@media (max-width: 375px) {
-  .container .suvs-holder {
-    width: 327px;
-    height: 442px;
-  }
-  .container .suvs-holder svg {
-    margin-top: 46px;
-  }
-  .container .suvs-holder h3 {
-    margin-top: 36px;
-  }
-  .container .suvs-holder p {
-    width: 224px;
-  }
-  .container .suvs-holder button {
-    margin-top: 28px;
-    margin-bottom: 49px;
-  }
-}
-.container .luxury-holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 307px;
-  height: 500px;
-  background-color: #004241;
-  padding-left: 48px;
-  border-radius: 0px 6px 6px 0px;
-}
-.container .luxury-holder svg {
-  margin-top: 48px;
-}
-.container .luxury-holder h3 {
-  font-family: "Big Shoulders Display", cursive;
-  font-size: 40px;
-  margin-top: 35px;
-  text-transform: uppercase;
-}
-.container .luxury-holder p {
-  margin-top: 28px;
-  width: 208px;
-  line-height: 25px;
-}
-.container .luxury-holder button {
-  width: 146px;
-  height: 48px;
-  margin-top: 86px;
-  text-align: center;
-  font-family: "Lexend Deca", sans-serif;
-  border: none;
-  border-radius: 24px;
-  background-color: #f2f2f2;
-  color: #004241;
-  cursor: pointer;
-}
-.container .luxury-holder button:hover {
-  border: 2px solid #f2f2f2;
-  color: #f2f2f2;
-  background-color: #004241;
-}
-@media (max-width: 375px) {
-  .container .luxury-holder {
-    width: 327px;
-    height: 442px;
+
+.luxury-holder {
+    background-color: #004241;
     border-radius: 0px 0px 6px 6px;
-  }
-  .container .luxury-holder svg {
-    margin-top: 46px;
-  }
-  .container .luxury-holder h3 {
-    margin-top: 36px;
-  }
-  .container .luxury-holder p {
-    width: 228px;
-  }
-  .container .luxury-holder button {
-    margin-top: 28px;
-    margin-bottom: 49px;
-  }
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+h3 {
+    margin-top: 2.4rem;
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
-.attribution a {
-  color: #3e52a3;
+p {
+    margin-top: 1.8rem;
+    line-height: 25px;
+}
+
+button {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-family: "Lexend Deca", sans-serif;
+    border: none;
+    border-radius: 48px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    margin-top: 1.86rem;
+}
+
+.sedans-holder > button {
+    color: #e38826;
+}
+
+.suvs-holder > button {
+    color: #006970;
+}
+
+.luxury-holder > button {
+    color: #004241;
+}
+
+button:hover {
+    outline: 2px solid #f2f2f2;
+    color: #f2f2f2;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 1025px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        max-width: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4rem;
+    }
+
+    .sedans-holder {
+        border-radius: 6px 0px 0px 6px;
+    }
+
+    .luxury-holder {
+        border-radius: 0px 6px 6px 0px;
+    }
+
+    p {
+        max-width: 82.5%;
+    }
+
+    button {
+        margin-top: 3.7rem;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    p {
+        max-width: 64%;
+    }
 }
